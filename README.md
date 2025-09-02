@@ -1,6 +1,6 @@
-# simulado_detran
+# Simulado Detran
 
-A new Flutter project.
+Projeto desenvolvido em flutter ate em primeirom momento voltado para Web. O projeto tem como finalidade gerar um mini simulado com 30 questões sobre a legislação de transito no brasil, o projeto se encontra imaturo no momento mas logo logo tomara uma forma maior.
 
 ## Getting Started
 
