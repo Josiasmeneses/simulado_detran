@@ -26,6 +26,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   void initState() {
     super.initState();
     cronometro = Stopwatch()..start();
+    carregarQuestoes();
   }
 
   Future<void> carregarQuestoes() async {
@@ -43,7 +44,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     });
   }
 
-  @override
   void proximaPergunta() {
     respostaUsuario.add(respostaSelecionada ?? -1);
     respostaSelecionada = null;
