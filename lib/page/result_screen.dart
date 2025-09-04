@@ -47,6 +47,7 @@ class ResultadoScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+
                   Text(
                     'Resultado',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),

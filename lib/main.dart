@@ -6,8 +6,11 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  print('Supabase URL: ${Env.supabaseUrl}');
-  print('Supabase Anon Key: ${Env.supabaseAnonKey}');
+  if (Env.supabaseUrl.isEmpty || Env.supabaseAnonKey.isEmpty) {
+    throw Exception(
+      " X Variáveis SUPABASE_URL e SUPABASE_ANON_KEY não foram Definidas!",
+    );
+  }
 
   try {
     await Supabase.initialize(

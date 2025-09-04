@@ -81,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Container(
                 padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Color(0xFF1A8CBF),
+                  color: Color(0xFF033F73),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Image.asset('images/png/logo.png', height: 100),
@@ -89,6 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: 24),
             Card(
+              color: Color.fromRGBO(238, 238, 238, 1),
               margin: EdgeInsets.symmetric(horizontal: 24),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
